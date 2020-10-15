@@ -1,3 +1,3 @@
 module.exports = {
-    mongoURI: process.env.MONGODB_URI || 'mongodb://localhost:27017/auroyal'
+    mongoURI: process.env.MONGO_URI || 'mongodb://localhost:27017/auroyal'
 }
