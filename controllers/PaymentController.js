@@ -1,4 +1,4 @@
-const stripe = require('stripe')("sk_test_rRU8WPZxcJ6K2wDntvpDFezH00dst7iywd");
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const User = require('./../models/User');
 
 const handlePayment = (req, res) => {

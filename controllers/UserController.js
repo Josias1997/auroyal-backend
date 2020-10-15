@@ -2,7 +2,7 @@ const User = require('./../models/User');
 const bcrypt = require('bcryptjs');
 const mail = require('./../utils/mail');
 const setPassword = require('./../utils/setPassword');
-const stripe = require('stripe')('sk_test_rRU8WPZxcJ6K2wDntvpDFezH00dst7iywd');
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const getCreditCardInfo = require('./../utils/getCreditCardInfo');
 
 const getUsers = (req, res) => {
